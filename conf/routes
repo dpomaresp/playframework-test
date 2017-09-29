@@ -8,3 +8,9 @@ GET     /                           controllers.ApplicationController.index()
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
 
+GET     /event/filter                  controllers.EventController.getEventWithFilters(tenant: java.util.Optional[java.lang.Long], userId: java.util.Optional[java.lang.Long])
+
+GET     /event/:id                  controllers.EventController.getEvent(id: Long)
+
+POST    /event/save                      controllers.EventController.saveEvent()
+

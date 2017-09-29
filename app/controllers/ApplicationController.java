@@ -13,6 +13,8 @@ public class ApplicationController extends Controller {
     public Result index() throws SQLException {
         return ok("Hello world");
     }
+
+
     
 }
             
